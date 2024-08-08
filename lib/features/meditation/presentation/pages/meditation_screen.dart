@@ -14,11 +14,11 @@ class MeditationScreen extends StatelessWidget {
         elevation: 0,
         leading: Image.asset(
           'assets/images/menu_burger',
-          fit: BoxFit.cover,
-          height: 15,
-          width: 15,
+          //fit: BoxFit.cover,
+          //height: 15,
+          //width: 15,
         ),
-        actions: const [
+        actions:  const [
           CircleAvatar(
             backgroundImage: AssetImage(
               'assets/images/profile.png',
@@ -27,6 +27,7 @@ class MeditationScreen extends StatelessWidget {
           SizedBox(
             width: 16,
           ),
+
         ],
       ),
       backgroundColor: Colors.white,
