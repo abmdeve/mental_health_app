@@ -3,23 +3,25 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mental_health_app/features/meditation/presentation/pages/meditation_screen.dart';
+import 'package:mental_health_app/features/music/presentation/pages/music_player_screen.dart';
 import 'package:mental_health_app/features/presentation/bottomNavBar/navigation/navigation_bloc.dart';
 import 'package:mental_health_app/features/presentation/bottomNavBar/navigation/navigation_state.dart';
 import 'package:mental_health_app/features/presentation/bottomNavBar/widget/bottom_nav_bar.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
-  final List<Widget> pages = [
+  final List<Widget> pages = const [
     MeditationScreen(),
-    Scaffold(
+    MusicPlayerScreen(),
+    /*Scaffold(
       body: Center(
         child: Text(
           "test 2",
           style: TextStyle(color: Colors.green),
         ),
       ),
-    ),
+    ),*/
   ];
 
   BottomNavigationBarItem createBottomNavItem(

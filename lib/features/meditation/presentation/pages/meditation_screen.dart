@@ -13,7 +13,7 @@ class MeditationScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Image.asset(
-          'assets/images/menu_burger',
+          'assets/images/menu_burger.png',
           //fit: BoxFit.cover,
           //height: 15,
           //width: 15,
