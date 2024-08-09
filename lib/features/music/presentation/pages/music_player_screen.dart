@@ -13,7 +13,12 @@ class MusicPlayerScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: DefaultColors.white,
         elevation: 0,
-        leading: Image.asset("assets/images/down_arrow.png"),
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Image.asset("assets/images/down_arrow.png"),
+        ),
         actions: [
           Image.asset("assets/images/transcript_icon.png"),
           const SizedBox(
@@ -41,11 +46,17 @@ class MusicPlayerScreen extends StatelessWidget {
             ),
             Text(
               "Rain on Glass",
-              style: Theme.of(context).textTheme.labelLarge,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .labelLarge,
             ),
             Text(
               "By : Painting with Passion",
-              style: Theme.of(context).textTheme.labelSmall,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .labelSmall,
             ),
             const Spacer(),
             ProgressBar(
